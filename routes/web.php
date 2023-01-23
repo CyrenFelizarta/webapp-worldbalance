@@ -28,7 +28,7 @@ use Illuminate\Support\Facades\Route;
 //---------PUBLIC ROUTES-------------//
 Route::get ('/', [HomeController::class, 'index'])->name('home.index');
 Route::get('/about', [AboutController::class, 'index'])->name('about.index');
-
+Route::get('/announcements', [AnnouncementController::class, 'index'])->name('announcement.index');
 
 
 
