@@ -8,6 +8,8 @@ use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\EmployeeController;
+
 
 use Illuminate\Support\Facades\Route;
 
@@ -47,12 +49,17 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/announcements/{announcement}/delete', [EmployeeController::class, 'EmployeeDeleteAnnouncement'])->name('employee.delete-announcement');        //employee delete announcement
+    Route::get('/{announcement:slug}/edit', [EmployeeController::class, 'EmployeeEditAnnouncement'])->name('employee.edit');
+    Route::put('/announcements/{announcement}/update', [EmployeeController::class, 'EmployeeUpdateAnnouncement'])->name('employee.update-announcement');        //employee update announcement on database
+
 });
 
 
 // USER DASHBOARD
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    $announcements = Announcement::all();
+    return view('dashboard', compact('announcements'));
 })->middleware(['auth', 'employee'])->name('dashboard');
 
 // ADMIN DASHBOARD
@@ -68,6 +75,8 @@ require __DIR__.'/auth.php';
 
 Route::group(['middleware' => ['auth', 'employee'], 'prefix' => 'employee'], function () {
     Route::get('/create', [EmployeeController::class, 'EmployeeCreateAnnouncement'])->name('employee.create');
+    Route::post('/employee-store', [EmployeeController::class, 'EmployeeStoreAnnouncement'])->name('employee.store');
+
 
 });
 

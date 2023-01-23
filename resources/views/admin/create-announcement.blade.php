@@ -1,15 +1,15 @@
 
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        <h2 class="text-white font-semibold text-xl  leading-tight">
             {{ __('Create Announcement') }}
         </h2>
     </x-slot>
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">
+            <div class="bg-gray overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 text-white">
                     {{-- {{ __("Create Announcement") }} <br><br><br>    --}}
                     
                     
@@ -44,14 +44,14 @@
 
           <div class="py-5">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                    <div class="p-6 bg-white border-b border-gray-200">
+                <div class="bg-gray overflow-hidden shadow-sm sm:rounded-lg">
+                    <div class="p-6 bg-gray  border-gray-200">
 
                         
                         
                           <div class="mb-4">
-                            <label class="text-xl text-gray-600">Image <span class="text-red-500">*</span></label></br>
-                            <input class="border-2 border-gray-300 p-2 w-full" type="file" id="image" name="image" required>
+                            <label class="text-xl text-white">Image <span class="text-red-500">*</span></label></br>
+                            <input class="border-2 border-gray-300 p-2 w-full  rounded-lg" type="file" id="image" name="image" required>
 
                             @error('image')
                                   <p style="color:red; margin-bottom:25px">{{$message}}</p>
@@ -61,8 +61,8 @@
 
 
                             <div class="mb-4">
-                                <label class="text-xl text-gray-600">Title <span class="text-red-500">*</span></label></br>
-                                <input type="text" class="border-2 border-gray-300 p-2 w-full" name="title" id="title" value="{{old('title')}}" required>
+                                <label class="text-xl text-white">Title <span class="text-red-500">*</span></label></br>
+                                <input type="text" class="border-2 border-gray-300 p-2 w-full  rounded-lg text-black" name="title" id="title" value="{{old('title')}}" required>
 
                                 @error('title')
                                 <p style="color:red; margin-bottom:25px">{{$message}}</p>
@@ -70,8 +70,8 @@
                             </div>
 
                             <div class="mb-4">
-                                <label class="text-xl text-gray-600">Description</label></br>
-                                <input type="text" class="border-2 border-gray-300 p-2 w-full" name="description" id="description" value="{{old('description')}}" required>
+                                <label class="text-xl text-white">Description</label></br>
+                                <input type="text" class="border-2 border-gray-300 p-2 w-full  rounded-lg text-black" name="description" id="description" value="{{old('description')}}" required>
 
                                 @error('description')
                                 <p style="color:red; margin-bottom:25px">{{$message}}</p>
@@ -80,7 +80,7 @@
                             </div>
 
                             <div class="mb-8">
-                                <label class="text-xl text-gray-600">Body <span class="text-red-500">*</span></label></br>
+                                <label class="text-xl text-white">Body <span class="text-red-500">*</span></label></br>
                                 <textarea name="body" class="border-2 border-gray-500">
                                   {{old('body')}}
                                 </textarea>
@@ -89,8 +89,8 @@
                                 @enderror
                             </div>
 
-                            <div class="flex p-2 py-4">
-                                
+                            <div class="flex p-2 py-4 float-right">
+            
                                 <button role="submit" class="h-10 px-5 m-2 text-green-100 transition-colors duration-150 bg-green-500 rounded-lg focus:shadow-outline hover:bg-green-800" >Post Announcement</button>
                             </div>
 
