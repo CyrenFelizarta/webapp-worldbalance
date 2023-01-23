@@ -119,8 +119,15 @@ https://templatemo.com/tm-571-hexashop
                     <div class="section-heading">
                         <h2>Say Hello. Don't Be Shy!</h2>
                         <span>Details to details is what makes Hexashop different from the other themes.</span>
+                       
+                       
+                            
+                       
                     </div>
-                    <form id="contact" action="" method="post">
+                    <form id="contact" action="{{ route('contact.store') }}" method="post">
+                        @if(session('status'))
+                            <p style="color:green; margin-bottom:25px">{{session('status')}}</p>
+                        @endif
                         <div class="row">
                           <div class="col-lg-6">
                             <fieldset>
@@ -143,6 +150,7 @@ https://templatemo.com/tm-571-hexashop
                           </div>
                         </div>
                       </form>
+                      
                 </div>
             </div>
         </div>

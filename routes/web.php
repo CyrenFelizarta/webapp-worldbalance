@@ -40,6 +40,8 @@ Route::get('/announcements', [AnnouncementController::class, 'index'])->name('an
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
 Route::get('/products', [ProductController::class, 'index'])->name('product.index');
 Route::get('/announcements/{announcement:slug}', [AnnouncementController::class, 'show'])->name('announcement.show');          //single announcement page
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+
 
 
 
