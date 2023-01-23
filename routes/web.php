@@ -67,9 +67,14 @@ require __DIR__.'/auth.php';
 //------ADMIN ROUTES-----//
 Route::group(['middleware' => ['auth', 'admin'], 'prefix' => 'admin'], function () {
     Route::get('/create', [AdminController::class, 'AdminCreateAnnouncement'])->name('admin.create');
+    Route::get('/{announcement:slug}/edit', [AdminController::class, 'AdminEditAnnouncement'])->name('admin.edit');                      //admin edit announcement page
+    Route::get('/announcements/{announcement}/delete', [AdminController::class, 'AdminDeleteAnnouncement'])->name('admin.delete-announcement');        //admin delete announcement
+
     Route::post('/admin-store', [AdminController::class, 'AdminStoreAnnouncement'])->name('admin.store');
     Route::get('/create-employee', [AdminController::class, 'AdminCreateEmployee'])->name('admin.create-employee');                                    //admin create employee page
     Route::get('/users', [AdminController::class, 'AdminListUsers'])->name('admin.list-user');
+    Route::post('/store-user', [AdminController::class, 'AdminStoreUser'])->name('admin.store-user');                                                  //admin store employee credentials
+    Route::get('/users/{user}/delete', [AdminController::class, 'AdminDeleteUser'])->name('admin.delete-user');                                                      //admin delete employee account
 
 
 

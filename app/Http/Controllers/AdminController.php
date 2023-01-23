@@ -8,6 +8,10 @@ use App\Models\User;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
+
+
 
 
 
@@ -22,6 +26,11 @@ class AdminController extends Controller
 
     public function AdminCreateAnnouncement() {
         return view ('admin.create-announcement');
+    }
+
+    public function AdminEditAnnouncement ($slug) {
+        $announcement = Announcement::where('slug', $slug)->firstOrFail();
+        return view('admin.edit-announcement', compact('announcement'));
     }
 
     public function AdminCreateEmployee () {
@@ -74,5 +83,47 @@ class AdminController extends Controller
 
        
         return redirect()->back()->with('status', 'Announcement Posted Successfully');
+    }
+
+    public function AdminDeleteAnnouncement(Announcement $announcement){
+        $announcement->delete();
+        return redirect()->back()->with('status', 'Announcement Delete Successfully');
+    }
+
+
+
+
+
+    public function AdminStoreUser(Request $request) {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:6|confirmed',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->back()
+                        ->withErrors($validator)
+                        ->withInput();
+        }
+
+        $user = new User;
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->password = bcrypt($request->password);
+        $user->save();
+
+
+
+        return redirect()->action([AdminController::class, 'AdminListUsers'])->with('status', 'Employee Account Created Successfully');
+        // return redirect()->back()->with('status', 'Employee Account Created Successfully');
+    }
+
+
+    public function AdminDeleteUser($id) {
+        $user = User::findOrFail($id);
+        $user->delete();
+
+        return redirect()->action([AdminController::class, 'AdminListUsers'])->with('status', 'Employee Account Deleted Successfully');
     }
 }
