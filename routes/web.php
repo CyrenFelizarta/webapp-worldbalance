@@ -6,6 +6,8 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\AdminController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -56,3 +58,14 @@ Route::get('/admin_dashboard', function () {
 })->middleware(['auth', 'admin'])->name('admin_dashboard');
 
 require __DIR__.'/auth.php';
+
+
+
+
+//------ADMIN ROUTES-----//
+Route::group(['middleware' => ['auth', 'admin'], 'prefix' => 'admin'], function () {
+    Route::get('/create', [AdminController::class, 'AdminCreateAnnouncement'])->name('admin.create');
+    Route::post('/admin-store', [AdminController::class, 'AdminStoreAnnouncement'])->name('admin.store');
+
+
+});
