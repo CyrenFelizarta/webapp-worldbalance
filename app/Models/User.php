@@ -44,6 +44,11 @@ class User extends Authenticatable
     ];
 
 
+    public function posts() {
+        return $this->hasMany(Announcement::class);
+    }
+
+
     /**
      * @param string $role
      * @return bool
