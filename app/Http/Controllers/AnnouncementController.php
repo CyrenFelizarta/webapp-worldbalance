@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Announcement;
 
 class AnnouncementController extends Controller
 {
@@ -15,8 +16,9 @@ class AnnouncementController extends Controller
     }
 
 
-    
+
     public function index () {
-        return view ('worldbalance.announcements');
+        $announcements = Announcement::all();
+        return view ('worldbalance.announcements', compact('announcements'));
     }
 }
