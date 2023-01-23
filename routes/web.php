@@ -64,6 +64,13 @@ Route::get('/admin_dashboard', function () {
 require __DIR__.'/auth.php';
 
 
+//--------------EMPLOYEE ROUTES---------------
+
+Route::group(['middleware' => ['auth', 'employee'], 'prefix' => 'employee'], function () {
+    Route::get('/create', [EmployeeController::class, 'EmployeeCreateAnnouncement'])->name('employee.create');
+
+});
+
 
 
 //------ADMIN ROUTES-----//
