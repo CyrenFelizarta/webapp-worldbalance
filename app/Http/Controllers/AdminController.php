@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Announcement;
+use App\Models\User;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
@@ -23,6 +24,15 @@ class AdminController extends Controller
         return view ('admin.create-announcement');
     }
 
+    public function AdminCreateEmployee () {
+        return view ('admin.create-employee');
+    }
+
+
+    public function AdminListUsers() {
+        $users = User::all();
+        return view ('admin.user-list', compact('users'));
+    }
 
     //store announcement data to database
     public function AdminStoreAnnouncement (Request $request) {

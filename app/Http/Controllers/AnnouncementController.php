@@ -21,4 +21,7 @@ class AnnouncementController extends Controller
         $announcements = Announcement::all();
         return view ('worldbalance.announcements', compact('announcements'));
     }
+
+
+    
 }

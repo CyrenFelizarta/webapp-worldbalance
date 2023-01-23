@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Announcement;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
@@ -54,7 +55,8 @@ Route::get('/dashboard', function () {
 
 // ADMIN DASHBOARD
 Route::get('/admin_dashboard', function () {
-    return view('admin_dashboard');
+    $announcements = Announcement::all();
+    return view('admin_dashboard', compact('announcements'));
 })->middleware(['auth', 'admin'])->name('admin_dashboard');
 
 require __DIR__.'/auth.php';
@@ -66,6 +68,10 @@ require __DIR__.'/auth.php';
 Route::group(['middleware' => ['auth', 'admin'], 'prefix' => 'admin'], function () {
     Route::get('/create', [AdminController::class, 'AdminCreateAnnouncement'])->name('admin.create');
     Route::post('/admin-store', [AdminController::class, 'AdminStoreAnnouncement'])->name('admin.store');
+    Route::get('/create-employee', [AdminController::class, 'AdminCreateEmployee'])->name('admin.create-employee');                                    //admin create employee page
+    Route::get('/users', [AdminController::class, 'AdminListUsers'])->name('admin.list-user');
+
+
 
 
 });
