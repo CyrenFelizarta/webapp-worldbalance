@@ -57,7 +57,7 @@ https://templatemo.com/tm-571-hexashop
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="{{route('home.index')}}" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="{{route('home.index')}}" >Home</a></li>
                             <li class="scroll-to-section"><a href="{{route('home.index')}}">Men's</a></li>
                             <li class="scroll-to-section"><a href="{{route('home.index')}}">Women's</a></li>
                             <li class="scroll-to-section"><a href="{{route('home.index')}}">Kid's</a></li>
@@ -89,118 +89,57 @@ https://templatemo.com/tm-571-hexashop
     </header>
     <!-- ***** Header Area End ***** -->
 
-    <br>
-    <br>
-    <br>
-    
-
-    <!-- ***** Women Area Starts ***** -->
-    <section class="section" id="women">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section-heading">
-                        <h2>Latest Announcements</h2>
-                        <span>Details to details is what makes Hexashop different from the other themes.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="page-heading about-page-heading" id="top">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="women-item-carousel">
-                        <div class="owl-women-item owl-carousel">
-                            @foreach ($announcements as $announcement)
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="{{route('announcement.show', $announcement)}}"><i class="fa fa-eye"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="{{asset($announcement->imagePath)}}" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>{{$announcement->title}}</h4>
-                                    <span>{{$announcement->description}}</span>
-                                    
-                                </div>
-                            </div>
-                                
-                            @endforeach
-
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="{{asset('images/women-01.jpg')}}" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>New Green Jacket</h4>
-                                    <span>$75.00</span>
-                                    
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="{{asset('images/women-02.jpg')}}" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Classic Dress</h4>
-                                    <span>$45.00</span>
-                                   
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="{{asset('images/women-03.jpg')}}" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Spring Collection</h4>
-                                    <span>$130.00</span>
-                                   
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="{{asset('images/women-01.jpg')}}" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Classic Spring</h4>
-                                    <span>$120.00</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="inner-content">
+                        <h2>Our Latest Announcements</h2>
+                        <span>Welcome to our announcement page, where you will find all the latest and important information from our company or organization. Keep checking back regularly for updates on new products, services, promotions, events and other relevant news.</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- ***** Women Area Ends ***** -->
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!-- ***** About Area Starts ***** -->
+    <div class="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left-image">
+                        <img src="{{asset($announcement->imagePath)}}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right-content">
+                        <h4>{{$announcement->title}}</h4>
+                        <span>{{$announcement->description}}</span>
+                        {{-- <div class="quote">
+                            <i class="fa fa-quote-left"></i><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiuski smod kon tempor incididunt ut labore.</p>
+                        </div> --}}
+                        <p>{!!$announcement->body!!}</p>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** About Area Ends ***** -->
 
     
 
    
-    
+
+   
+
     <!-- ***** Footer Start ***** -->
     <footer>
         <div class="container">
@@ -302,4 +241,5 @@ https://templatemo.com/tm-571-hexashop
     </script>
 
   </body>
+
 </html>

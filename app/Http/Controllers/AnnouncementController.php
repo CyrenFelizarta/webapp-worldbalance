@@ -22,6 +22,11 @@ class AnnouncementController extends Controller
         return view ('worldbalance.announcements', compact('announcements'));
     }
 
+    
 
+    public function show ($slug) {
+        $announcement = Announcement::where('slug', $slug)->firstOrFail();
+        return view('worldbalance.single-announcement', compact('announcement')); 
+    }
     
 }

@@ -93,6 +93,43 @@ class AdminController extends Controller
 
 
 
+    public function AdminUpdateAnnouncement (Request $request, Announcement $announcement) {
+        $request->validate([
+            'title' => 'required',
+            'description' => 'required',
+            // 'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|dimensions:width=500,height=272',
+            'image' => 'required | image',
+            'body' => 'required'
+        ]);
+
+        $title = $request->input('title');
+        $description = $request->input('description');
+        $announcementId  = $announcement->id;
+
+        $slug = Str::slug($title, '-'). '-' . $announcementId;
+        $user_id = Auth::user()-> id;
+        $body = $request->input('body');
+
+        $imagePath = 'storage/' . $request->file('image')->store('announcementImages', 'public');
+
+        
+        $announcement->title = $title;
+        $announcement->description = $description;
+        $announcement->slug = $slug;
+        $announcement->user_id = $user_id;
+        $announcement->body = $body;
+        $announcement->imagePath = $imagePath;
+
+        $announcement->save();
+
+        
+        return redirect()->route('admin_dashboard')->with('status', 'Announcement Updated Successfully');
+
+    }
+
+
+
+
 
     public function AdminStoreUser(Request $request) {
         $validator = Validator::make($request->all(), [

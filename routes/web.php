@@ -37,6 +37,8 @@ Route::get('/about', [AboutController::class, 'index'])->name('about.index');
 Route::get('/announcements', [AnnouncementController::class, 'index'])->name('announcement.index');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
 Route::get('/products', [ProductController::class, 'index'])->name('product.index');
+Route::get('/announcements/{announcement:slug}', [AnnouncementController::class, 'show'])->name('announcement.show');          //single announcement page
+
 
 
 
@@ -69,6 +71,7 @@ Route::group(['middleware' => ['auth', 'admin'], 'prefix' => 'admin'], function 
     Route::get('/create', [AdminController::class, 'AdminCreateAnnouncement'])->name('admin.create');
     Route::get('/{announcement:slug}/edit', [AdminController::class, 'AdminEditAnnouncement'])->name('admin.edit');                      //admin edit announcement page
     Route::get('/announcements/{announcement}/delete', [AdminController::class, 'AdminDeleteAnnouncement'])->name('admin.delete-announcement');        //admin delete announcement
+    Route::put('/announcements/{announcement}/update', [AdminController::class, 'AdminUpdateAnnouncement'])->name('admin.update-announcement');        //admin update announcement on database
 
     Route::post('/admin-store', [AdminController::class, 'AdminStoreAnnouncement'])->name('admin.store');
     Route::get('/create-employee', [AdminController::class, 'AdminCreateEmployee'])->name('admin.create-employee');                                    //admin create employee page
