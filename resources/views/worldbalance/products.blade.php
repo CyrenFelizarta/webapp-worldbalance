@@ -52,7 +52,7 @@ https://templatemo.com/tm-571-hexashop
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="{{route('home.index')}}" class="logo">
-                            <img src="{{asset('images/World_balance_logo.png')}}" style="height: 80px">
+                            <img src="{{asset('images/World_balance_logo.png')}}" style="height: 60px">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
@@ -96,7 +96,6 @@ https://templatemo.com/tm-571-hexashop
                 <div class="col-lg-12">
                     <div class="inner-content">
                         <h2>Check Our Products</h2>
-                        <span>Awesome &amp; Creative HTML CSS layout by TemplateMo</span>
                     </div>
                 </div>
             </div>
@@ -129,11 +128,11 @@ https://templatemo.com/tm-571-hexashop
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="{{asset('images/men-01.jpg')}}" alt="">
+                            <img src="{{asset('images/wb-men/wb-severine-m.jpg')}}" alt="">
                         </div>
                         <div class="down-content">
-                            <h4>Classic Spring</h4>
-                            <span>$120.00</span>
+                            <h4>Severine</h4>
+                            <span>&#8369; 2,199.00</span>
                             <ul class="stars">
                                 <li><i class="fa fa-star"></i></li>
                                 <li><i class="fa fa-star"></i></li>
@@ -154,11 +153,11 @@ https://templatemo.com/tm-571-hexashop
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="{{asset('images/men-02.jpg')}}" alt="">
+                            <img src="{{asset('images/wb-men/wb-everyday-hoodie.jpg')}}" alt="">
                         </div>
                         <div class="down-content">
-                            <h4>Air Force 1 X</h4>
-                            <span>$90.00</span>
+                            <h4>Everyday Hoodie</h4>
+                            <span>&#8369; 1,399.00</span>
                             <ul class="stars">
                                 <li><i class="fa fa-star"></i></li>
                                 <li><i class="fa fa-star"></i></li>
@@ -179,11 +178,11 @@ https://templatemo.com/tm-571-hexashop
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="{{asset('images/men-03.jpg')}}" alt="">
+                            <img src="{{asset('images/wb-men/wb-field-marshall.jpg')}}" alt="">
                         </div>
                         <div class="down-content">
-                            <h4>Love Nana ‘20</h4>
-                            <span>$150.00</span>
+                            <h4>Field Marshall</h4>
+                            <span>&#8369; 2,099.00</span>
                             <ul class="stars">
                                 <li><i class="fa fa-star"></i></li>
                                 <li><i class="fa fa-star"></i></li>
@@ -204,11 +203,11 @@ https://templatemo.com/tm-571-hexashop
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="{{asset('images/women-01.jpg')}}" alt="">
+                            <img src="{{asset('images/wb-men/wb-everyday-tee.jpg')}}" alt="">
                         </div>
                         <div class="down-content">
-                            <h4>New Green Jacket</h4>
-                            <span>$75.00</span>
+                            <h4>Everyday Tee</h4>
+                            <span>&#8369; 1,399.00</span>
                             <ul class="stars">
                                 <li><i class="fa fa-star"></i></li>
                                 <li><i class="fa fa-star"></i></li>
@@ -229,11 +228,11 @@ https://templatemo.com/tm-571-hexashop
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="{{asset('images/women-02.jpg')}}" alt="">
+                            <img src="{{asset('images/wb-men/wb-cager.jpg')}}" alt="">
                         </div>
                         <div class="down-content">
-                            <h4>Classic Dress</h4>
-                            <span>$45.00</span>
+                            <h4>Cager</h4>
+                            <span>&#8369; 2,699.00</span>
                             <ul class="stars">
                                 <li><i class="fa fa-star"></i></li>
                                 <li><i class="fa fa-star"></i></li>
@@ -254,11 +253,11 @@ https://templatemo.com/tm-571-hexashop
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="{{asset('images/women-03.jpg')}}" alt="">
+                            <img src="{{asset('images/wb-women/wb-everyday-tee-649.jpg')}}" alt="">
                         </div>
                         <div class="down-content">
-                            <h4>Spring Collection</h4>
-                            <span>$130.00</span>
+                            <h4>Everyday Tee</h4>
+                            <span>&#8369; 649.00</span>
                             <ul class="stars">
                                 <li><i class="fa fa-star"></i></li>
                                 <li><i class="fa fa-star"></i></li>
@@ -279,11 +278,11 @@ https://templatemo.com/tm-571-hexashop
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="{{asset('images/kid-01.jpg')}}" alt="">
+                            <img src="{{asset('images/wb-women/wb-heirloom-1999.jpg')}}" alt="">
                         </div>
                         <div class="down-content">
-                            <h4>School Collection</h4>
-                            <span>$80.00</span>
+                            <h4>Heirloom</h4>
+                            <span>&#8369; 1,999.00</span>
                             <ul class="stars">
                                 <li><i class="fa fa-star"></i></li>
                                 <li><i class="fa fa-star"></i></li>
@@ -304,11 +303,11 @@ https://templatemo.com/tm-571-hexashop
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="{{asset('images/kid-02.jpg')}}" alt="">
+                            <img src="{{asset('images/wb-women/wb-trackracer-2199.jpg')}}" alt="">
                         </div>
                         <div class="down-content">
-                            <h4>Summer Cap</h4>
-                            <span>$12.00</span>
+                            <h4>Track Racer</h4>
+                            <span>&#8369; 2,199.00</span>
                             <ul class="stars">
                                 <li><i class="fa fa-star"></i></li>
                                 <li><i class="fa fa-star"></i></li>
@@ -329,11 +328,111 @@ https://templatemo.com/tm-571-hexashop
                                     <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="{{asset('images/kid-03.jpg')}}" alt="">
+                            <img src="{{asset('images/wb-women/wb-valerian-2299.jpg')}}" alt="">
                         </div>
                         <div class="down-content">
-                            <h4>Classic Kid</h4>
-                            <span>$30.00</span>
+                            <h4>Valerian</h4>
+                            <span>&#8369; 2,299.0</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="{{asset('images/wb-kids/wb-aggressor-kids-1999.jpg')}}" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>Aggressor - Kids</h4>
+                            <span>&#8369; 1,999.00</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="{{asset('images/wb-kids/wb-boys-utility-parka-1099.jpg')}}" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>Boys Utility - Parka</h4>
+                            <span>&#8369; 1,099.00</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="{{asset('images/wb-kids/wb-g-hoodie-short-set-899.jpg')}}" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>Girls - Hoodie And<br> Short Set</h4>
+                            <span>&#8369; 899.00</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="{{asset('images/wb-kids/wb-sweeping-steps-kids-1399.jpg')}}" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>Sweeping Steps - Kids</h4>
+                            <span>&#8369; 1,399.00</span>
                             <ul class="stars">
                                 <li><i class="fa fa-star"></i></li>
                                 <li><i class="fa fa-star"></i></li>
@@ -380,9 +479,9 @@ https://templatemo.com/tm-571-hexashop
                             <img src="{{asset('images/white-logo.png')}}" alt="hexashop ecommerce templatemo">
                         </div>
                         <ul>
-                            <li><a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a></li>
-                            <li><a href="#">hexashop@company.com</a></li>
-                            <li><a href="#">010-020-0340</a></li>
+                            <li><a href="#">Butuan City, Agusan Del Norte, Philippines</a></li>
+                            <li><a href="#">http://bitly.ws/nxW9</a></li>
+                            <li><a href="#">0956-798-6263</a></li>
                         </ul>
                     </div>
                 </div>

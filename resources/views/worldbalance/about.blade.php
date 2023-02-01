@@ -52,7 +52,7 @@ https://templatemo.com/tm-571-hexashop
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="{{route('home.index')}}" class="logo">
-                            <img src="{{asset('images/World_balance_logo.png')}}" style="height: 80px">
+                            <img src="{{asset('images/World_balance_logo.png')}}" style="height: 60px">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
@@ -95,8 +95,7 @@ https://templatemo.com/tm-571-hexashop
             <div class="row">
                 <div class="col-lg-12">
                     <div class="inner-content">
-                        <h2>About Our Company</h2>
-                        <span>Awesome, clean &amp; creative HTML5 Template</span>
+                        <h2>About World Balance</h2>
                     </div>
                 </div>
             </div>
@@ -110,17 +109,20 @@ https://templatemo.com/tm-571-hexashop
             <div class="row">
                 <div class="col-lg-6">
                     <div class="left-image">
-                        <img src="{{asset('images/about-left-image.jpg')}}" alt="">
+                        <img src="{{asset('images/history.png')}}" style="height: 650px"alt="">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="right-content">
-                        <h4>About Us &amp; Our Skills</h4>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod kon tempor incididunt ut labore.</span>
+                        <h4>About Us</h4>
+                        <span>CHG GLOBAL INC. is one of the leading retailers of contemporary casual and lifestyle products in the Philippines.</span>
+                        <span>Starting with World Balance, the active lifestyle core brand, that has been in the market four decades strong, it has continued to grow and expand its portfolio of businesses and product line to serve local and global consumers.</span>
+                        <span>World Balance is all about offering a wide array of quality products and experiences the customers will love. Our goal is to empower Filipinos with the right gear to keep on going, for those who seek value-for-money performance and active lifestyle products.</span>
+                        <span>Whether it is for everyday wear, work, or performance, World Balance provides value and comfort for customers from different walks of life.</span>
                         <div class="quote">
-                            <i class="fa fa-quote-left"></i><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiuski smod kon tempor incididunt ut labore.</p>
+                            <i class="fa fa-quote-left"></i><p>THE HISTORY</p>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod kon tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                        <p>The World Balance story began with one pair of shoes and a visionary family of shoemakers in the 1980s. Now, the brand has grown into one of the leading retailers in the country. For more than 40 years, World Balance continue to make people, products, and lives better.</p>
                         <ul>
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -134,14 +136,14 @@ https://templatemo.com/tm-571-hexashop
     </div>
     <!-- ***** About Area Ends ***** -->
 
-    <!-- ***** Our Team Area Starts ***** -->
+    <!-- ***** Our Team Area Starts 
     <section class="our-team">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-heading">
-                        <h2>Our Amazing Team</h2>
-                        <span>Details to details is what makes Hexashop different from the other themes.</span>
+                        <h2>PRODUCT OFFERINGS</h2>
+                        <span>Whether it is for everyday wear, work, or performance, World Balance provides value and comfort. Our products range from footwear, apparel, and accessories for men, women, and kids.</span>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -160,8 +162,8 @@ https://templatemo.com/tm-571-hexashop
                             <img src="{{asset('images/team-member-01.jpg')}}">
                         </div>
                         <div class="down-content">
-                            <h4>Ragnar Lodbrok</h4>
-                            <span>Product Caretaker</span>
+                            <h4>PERFORMANCE</h4>
+                            <span>Leveraging footwear for serious to casual athletes. This line offers a range of versatile products that can be used in sports, cross training, or active lifestyle.</span>
                         </div>
                     </div>
                 </div>
@@ -181,8 +183,10 @@ https://templatemo.com/tm-571-hexashop
                             <img src="{{asset('images/team-member-02.jpg')}}">
                         </div>
                         <div class="down-content">
-                            <h4>Ragnar Lodbrok</h4>
-                            <span>Product Caretaker</span>
+                            <h4>LIFESTYLE</h4>
+                            <span>Fuses the brand's heritage with the modern times. Made for the consumer who seeks stylish sneakers and accessories with
+                                fashionable sensibilities.
+                                </span>
                         </div>
                     </div>
                 </div>
@@ -202,14 +206,14 @@ https://templatemo.com/tm-571-hexashop
                             <img src="{{asset('images/team-member-03.jpg')}}">
                         </div>
                         <div class="down-content">
-                            <h4>Ragnar Lodbrok</h4>
-                            <span>Product Caretaker</span>
+                            <h4>OUTDOOR</h4>
+                            <span>The right gear for an outdoor adventure from light trail shoes that easily transition to well-protected aquawear.</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> ***** -->
     <!-- ***** Our Team Area Ends ***** -->
 
     <!-- ***** Services Area Starts ***** -->
@@ -218,29 +222,33 @@ https://templatemo.com/tm-571-hexashop
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-heading">
-                        <h2>Our Services</h2>
-                        <span>Details to details is what makes Hexashop different from the other themes.</span>
+                        <h2>PRODUCT OFFERINGS</h2>
+                        <span>Whether it is for everyday wear, work, or performance, World Balance provides value and comfort.</span>
+                            <span>Our products range from footwear, apparel, and accessories for men, women, and kids.</span>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="service-item">
-                        <h4>Synther Vaporware</h4>
-                        <p>Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed do eiusmod temp incididunt ut labore, et dolore quis ipsum suspend.</p>
-                        <img src="{{asset('images/service-01.jpg')}}" alt="">
+                        <h4>PERFORMANCE</h4>
+                        <p>Leveraging footwear for serious to casual athletes. This line offers a range of versatile products that can be used in sports, cross training, or active lifestyle.</p>
+                        <img src="{{asset('images/performance.png')}}" style="height: 230px" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="service-item">
-                        <h4>Locavore Squidward</h4>
-                        <p>Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed do eiusmod temp incididunt ut labore, et dolore quis ipsum suspend.</p>
-                        <img src="{{asset('images/service-02.jpg')}}" alt="">
+                        <h4>LIFESTYLE</h4>
+                        <p>Fuses the brand's heritage with the modern times. Made for the consumer who seeks stylish sneakers and accessories with
+                            fashionable sensibilities.
+                            </p>
+                        <img src="{{asset('images/lifestyle.png')}}" style="height: 230px" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="service-item">
-                        <h4>Health Gothfam</h4>
-                        <p>Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed do eiusmod temp incididunt ut labore, et dolore quis ipsum suspend.</p>
-                        <img src="{{asset('images/service-03.jpg')}}" alt="">
+                        <h4>OUTDOOR</h4>
+                        <p>The right gear for an outdoor adventure from light trail shoes that easily transition to well-protected aquawear.
+                        </p>
+                        <img src="{{asset('images/outdoor.png')}}" style="height: 250px" alt="">
                     </div>
                 </div>
             </div>
@@ -248,7 +256,7 @@ https://templatemo.com/tm-571-hexashop
     </section>
     <!-- ***** Services Area Ends ***** -->
 
-    <!-- ***** Subscribe Area Starts ***** -->
+    <!-- ***** Subscribe Area Starts 
     <div class="subscribe">
         <div class="container">
             <div class="row">
@@ -297,7 +305,7 @@ https://templatemo.com/tm-571-hexashop
                 </div>
             </div>
         </div>
-    </div>
+    </div> ***** -->
     <!-- ***** Subscribe Area Ends ***** -->
 
     <!-- ***** Footer Start ***** -->
@@ -310,9 +318,9 @@ https://templatemo.com/tm-571-hexashop
                             <img src="{{asset('images/worlbalance_white_logo.png')}}" style="height: 80px"  alt="hexashop ecommerce templatemo">
                         </div>
                         <ul>
-                            <li><a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a></li>
-                            <li><a href="#">hexashop@company.com</a></li>
-                            <li><a href="#">010-020-0340</a></li>
+                            <li><a href="#">Butuan City, Agusan Del Norte, Philippines</a></li>
+                            <li><a href="#">http://bitly.ws/nxW9</a></li>
+                            <li><a href="#">0956-798-6263</a></li>
                         </ul>
                     </div>
                 </div>

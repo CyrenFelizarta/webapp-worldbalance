@@ -52,7 +52,7 @@ https://templatemo.com/tm-571-hexashop
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="{{route('home.index')}}" class="logo">
-                            <img src="{{asset('images/World_balance_logo.png')}}" style="height: 80px">
+                            <img src="{{asset('images/World_balance_logo.png')}}" style="height: 60px">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
@@ -115,12 +115,12 @@ https://templatemo.com/tm-571-hexashop
                                     <div class="thumb">
                                         <div class="inner-content">
                                             <h4>Women</h4>
-                                            <span>Best Clothes For Women</span>
+                                            <span>Best Clothes & Shoes For Women</span>
                                         </div>
                                         <div class="hover-content">
                                             <div class="inner">
                                                 <h4>Women</h4>
-                                                <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+                                                <p>Get your Favorite women’s wear.</p>
                                                 <div class="main-border-button">
                                                     <a href="#">Discover More</a>
                                                 </div>
@@ -135,12 +135,12 @@ https://templatemo.com/tm-571-hexashop
                                     <div class="thumb">
                                         <div class="inner-content">
                                             <h4>Men</h4>
-                                            <span>Best Clothes For Men</span>
+                                            <span>Best Clothes & Shoes For Men</span>
                                         </div>
                                         <div class="hover-content">
                                             <div class="inner">
                                                 <h4>Men</h4>
-                                                <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+                                                <p>Elevate your basics with comfy fits for men.</p>
                                                 <div class="main-border-button">
                                                     <a href="#">Discover More</a>
                                                 </div>
@@ -155,12 +155,12 @@ https://templatemo.com/tm-571-hexashop
                                     <div class="thumb">
                                         <div class="inner-content">
                                             <h4>Kids</h4>
-                                            <span>Best Clothes For Kids</span>
+                                            <span>Best Clothes & Shoes For Kids</span>
                                         </div>
                                         <div class="hover-content">
                                             <div class="inner">
                                                 <h4>Kids</h4>
-                                                <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+                                                <p>Treat your kids to new shoes, slides & accessories.</p>
                                                 <div class="main-border-button">
                                                     <a href="#">Discover More</a>
                                                 </div>
@@ -180,7 +180,7 @@ https://templatemo.com/tm-571-hexashop
                                         <div class="hover-content">
                                             <div class="inner">
                                                 <h4>Accessories</h4>
-                                                <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+                                                <p>Versatile pieces from bags to socks to effortlessly complete your look</p>
                                                 <div class="main-border-button">
                                                     <a href="#">Discover More</a>
                                                 </div>
@@ -205,7 +205,7 @@ https://templatemo.com/tm-571-hexashop
                 <div class="col-lg-6">
                     <div class="section-heading">
                         <h2>Men's Latest</h2>
-                        <span>Details to details is what makes Hexashop different from the other themes.</span>
+                        <span>Elevate your basics with comfy fits for men.</span>
                     </div>
                 </div>
             </div>
@@ -325,7 +325,7 @@ https://templatemo.com/tm-571-hexashop
                 <div class="col-lg-6">
                     <div class="section-heading">
                         <h2>Women's Latest</h2>
-                        <span>Details to details is what makes Hexashop different from the other themes.</span>
+                        <span>Get your Favorite women's wear</span>
                     </div>
                 </div>
             </div>
@@ -422,7 +422,7 @@ https://templatemo.com/tm-571-hexashop
                 <div class="col-lg-6">
                     <div class="section-heading">
                         <h2>Kid's Latest</h2>
-                        <span>Details to details is what makes Hexashop different from the other themes.</span>
+                        <span>Treat your kids to new shoes, slides & accessories</span>
                     </div>
                 </div>
             </div>
@@ -522,7 +522,7 @@ https://templatemo.com/tm-571-hexashop
     </section>
     <!-- ***** Kids Area Ends ***** -->
 
-    <!-- ***** Explore Area Starts ***** -->
+    <!-- ***** Explore Area Starts 
     <section class="section" id="explore">
         <div class="container">
             <div class="row">
@@ -570,10 +570,10 @@ https://templatemo.com/tm-571-hexashop
                 </div>
             </div>
         </div>
-    </section>
+    </section> ***** -->
     <!-- ***** Explore Area Ends ***** -->
 
-    <!-- ***** Social Area Starts ***** -->
+    <!-- ***** Social Area Starts 
     <section class="section" id="social">
         <div class="container">
             <div class="row">
@@ -655,10 +655,10 @@ https://templatemo.com/tm-571-hexashop
                 </div>
             </div>
         </div>
-    </section>
+    </section> ***** -->
     <!-- ***** Social Area Ends ***** -->
 
-    <!-- ***** Subscribe Area Starts ***** -->
+    <!-- ***** Subscribe Area Starts 
     <div class="subscribe">
         <div class="container">
             <div class="row">
@@ -707,7 +707,7 @@ https://templatemo.com/tm-571-hexashop
                 </div>
             </div>
         </div>
-    </div>
+    </div> ***** -->
     <!-- ***** Subscribe Area Ends ***** -->
     
     <!-- ***** Footer Start ***** -->
@@ -722,9 +722,9 @@ https://templatemo.com/tm-571-hexashop
                         <br>
                         
                         <ul>
-                            <li><a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a></li>
-                            <li><a href="#">hexashop@company.com</a></li>
-                            <li><a href="#">010-020-0340</a></li>
+                            <li><a href="#">Butuan City, Agusan Del Norte, Philippines</a></li>
+                            <li><a href="#">http://bitly.ws/nxW9</a></li>
+                            <li><a href="#">0956-798-6263</a></li>
                         </ul>
                     </div>
                 </div>

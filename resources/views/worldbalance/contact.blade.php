@@ -52,7 +52,7 @@ https://templatemo.com/tm-571-hexashop
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="{{route('home.index')}}" class="logo">
-                            <img src="{{asset('images/World_balance_logo.png')}}" style="height: 80px">
+                            <img src="{{asset('images/World_balance_logo.png')}}" style="height: 60px">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
@@ -96,7 +96,7 @@ https://templatemo.com/tm-571-hexashop
                 <div class="col-lg-12">
                     <div class="inner-content">
                         <h2>Contact Us</h2>
-                        <span>Awesome, clean &amp; creative HTML5 Template</span>
+                         <!-- *****<span>Awesome, clean &amp; creative HTML5 Template</span>***** -->
                     </div>
                 </div>
             </div>
@@ -117,12 +117,8 @@ https://templatemo.com/tm-571-hexashop
                 </div>
                 <div class="col-lg-6">
                     <div class="section-heading">
-                        <h2>Say Hello. Don't Be Shy!</h2>
-                        <span>Details to details is what makes Hexashop different from the other themes.</span>
-                       
-                       
-                            
-                       
+                        <h2>Get In Touch!</h2>
+                        <span>We would like to know your feedback on how we can assist you better to provide you with the best quality product and service.</span>
                     </div>
                     <form id="contact" action="{{ route('contact.store') }}" method="post">
                         @if(session('status'))
@@ -157,7 +153,7 @@ https://templatemo.com/tm-571-hexashop
     </div>
     <!-- ***** Contact Area Ends ***** -->
 
-    <!-- ***** Subscribe Area Starts ***** -->
+    <!-- ***** Subscribe Area Starts 
     <div class="subscribe">
         <div class="container">
             <div class="row">
@@ -206,7 +202,7 @@ https://templatemo.com/tm-571-hexashop
                 </div>
             </div>
         </div>
-    </div>
+    </div> ***** -->
     <!-- ***** Subscribe Area Ends ***** -->
 
     <!-- ***** Footer Start ***** -->
@@ -219,9 +215,9 @@ https://templatemo.com/tm-571-hexashop
                             <img src="{{asset('images/worlbalance_white_logo.png')}}" style="height: 80px"  alt="hexashop ecommerce templatemo">
                         </div>
                         <ul>
-                            <li><a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a></li>
-                            <li><a href="#">hexashop@company.com</a></li>
-                            <li><a href="#">010-020-0340</a></li>
+                            <li><a href="#">Butuan City, Agusan Del Norte, Philippines</a></li>
+                            <li><a href="#">http://bitly.ws/nxW9</a></li>
+                            <li><a href="#">0956-798-6263</a></li>
                         </ul>
                     </div>
                 </div>

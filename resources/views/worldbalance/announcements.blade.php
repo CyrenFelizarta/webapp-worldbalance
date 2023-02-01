@@ -52,7 +52,7 @@ https://templatemo.com/tm-571-hexashop
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="{{route('home.index')}}" class="logo">
-                            <img src="{{asset('images/World_balance_logo.png')}}" style="height: 80px">
+                            <img src="{{asset('images/World_balance_logo.png')}}" style="height: 60px">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
@@ -101,7 +101,7 @@ https://templatemo.com/tm-571-hexashop
                 <div class="col-lg-6">
                     <div class="section-heading">
                         <h2>Latest Announcements</h2>
-                        <span>Details to details is what makes Hexashop different from the other themes.</span>
+                        <span>Explore our new products with great deals.</span>
                     </div>
                 </div>
             </div>
@@ -130,7 +130,7 @@ https://templatemo.com/tm-571-hexashop
                                 
                             @endforeach
 
-                            <div class="item">
+                            <!-- *****<div class="item">
                                 <div class="thumb">
                                     <div class="hover-content">
                                         <ul>
@@ -187,14 +187,14 @@ https://templatemo.com/tm-571-hexashop
                                 <div class="down-content">
                                     <h4>Classic Spring</h4>
                                     <span>$120.00</span>
-                                </div>
+                                </div>***** -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
     <!-- ***** Women Area Ends ***** -->
 
     
@@ -211,9 +211,9 @@ https://templatemo.com/tm-571-hexashop
                             <img src="{{asset('images/worlbalance_white_logo.png')}}" style="height: 80px"  alt="hexashop ecommerce templatemo">
                         </div>
                         <ul>
-                            <li><a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a></li>
-                            <li><a href="#">hexashop@company.com</a></li>
-                            <li><a href="#">010-020-0340</a></li>
+                            <li><a href="#">Butuan City, Agusan Del Norte, Philippines</a></li>
+                            <li><a href="#">http://bitly.ws/nxW9</a></li>
+                            <li><a href="#">0956-798-6263</a></li>
                         </ul>
                     </div>
                 </div>
