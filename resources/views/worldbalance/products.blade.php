@@ -66,7 +66,7 @@ https://templatemo.com/tm-571-hexashop
                                 <ul>
                                     <li><a href="{{route('about.index')}}">About Us</a></li>
                                     <li><a href="{{route('product.index')}}">Products</a></li>
-                                    <li><a href="single-product.html">Single Product</a></li>
+                                    {{-- <li><a href="single-product.html">Single Product</a></li> --}}
                                     <li><a href="{{route('contact.index')}}">Contact Us</a></li>
                                 </ul>
                             </li>
