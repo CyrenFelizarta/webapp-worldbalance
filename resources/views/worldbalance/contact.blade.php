@@ -211,7 +211,7 @@ https://templatemo.com/tm-571-hexashop
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-md-4">
                     <div class="first-item">
                         <div class="logo">
                             <img src="{{asset('images/worlbalance_white_logo.png')}}" style="height: 80px"  alt="hexashop ecommerce templatemo">
@@ -223,7 +223,7 @@ https://templatemo.com/tm-571-hexashop
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-md-4">
                     <h4>Shopping &amp; Categories</h4>
                     <ul>
                         <li><a href="#">Men’s Shopping</a></li>
@@ -231,7 +231,7 @@ https://templatemo.com/tm-571-hexashop
                         <li><a href="#">Kid's Shopping</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-md-4">
                     <h4>Useful Links</h4>
                     <ul>
                         <li><a href="#">Homepage</a></li>
@@ -240,7 +240,7 @@ https://templatemo.com/tm-571-hexashop
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                {{-- <div class="col-lg-3">
                     <h4>Help &amp; Information</h4>
                     <ul>
                         <li><a href="#">Help</a></li>
@@ -248,7 +248,7 @@ https://templatemo.com/tm-571-hexashop
                         <li><a href="#">Shipping</a></li>
                         <li><a href="#">Tracking ID</a></li>
                     </ul>
-                </div>
+                </div> --}}
                 <div class="col-lg-12">
                     <div class="under-footer">
                         <p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved. 
