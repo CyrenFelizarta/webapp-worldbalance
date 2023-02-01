@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Announcement;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index () {
-        return view ('worldbalance.home');
+        $announcements = Announcement::all();
+        return view ('worldbalance.home', compact('announcements'));
     }
 }

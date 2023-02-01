@@ -198,6 +198,111 @@ https://templatemo.com/tm-571-hexashop
     </div>
     <!-- ***** Main Banner Area End ***** -->
 
+    <!-- ***** Announcement Area Starts ***** -->
+    <section class="section" id="women">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-heading">
+                        <h2>Latest Announcements</h2>
+                        <span>Explore our new products with great deals.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="women-item-carousel">
+                        <div class="owl-women-item owl-carousel">
+                            @foreach ($announcements as $announcement)
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="{{route('announcement.show', $announcement)}}"><i class="fa fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="{{asset($announcement->imagePath)}}" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>{{$announcement->title}}</h4>
+                                    <span>{{$announcement->description}}</span>
+                                    
+                                </div>
+                            </div>
+                                
+                            @endforeach
+
+                            <!-- *****<div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="{{asset('images/women-01.jpg')}}" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>New Green Jacket</h4>
+                                    <span>$75.00</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="{{asset('images/women-02.jpg')}}" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Classic Dress</h4>
+                                    <span>$45.00</span>
+                                   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="{{asset('images/women-03.jpg')}}" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Spring Collection</h4>
+                                    <span>$130.00</span>
+                                   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="{{asset('images/women-01.jpg')}}" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Classic Spring</h4>
+                                    <span>$120.00</span>
+                                </div>***** -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- ***** Announcement Area Ends ***** -->
+
+
+
     <!-- ***** Men Area Starts ***** -->
     <section class="section" id="men">
         <div class="container">
