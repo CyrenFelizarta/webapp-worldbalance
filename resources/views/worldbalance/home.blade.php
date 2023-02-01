@@ -123,8 +123,8 @@ https://templatemo.com/tm-571-hexashop
                                             <div class="inner">
                                                 <h4>Women</h4>
                                                 <p>Get your Favorite women’s wear.</p>
-                                                <div class="main-border-button">
-                                                    <a href="#">Discover More</a>
+                                                <div class="main-border-button scroll-to-section">
+                                                    <a href="#women">Discover More</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -143,8 +143,8 @@ https://templatemo.com/tm-571-hexashop
                                             <div class="inner">
                                                 <h4>Men</h4>
                                                 <p>Elevate your basics with comfy fits for men.</p>
-                                                <div class="main-border-button">
-                                                    <a href="#">Discover More</a>
+                                                <div class="main-border-button scroll-to-section">
+                                                    <a href="#men">Discover More</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -163,8 +163,8 @@ https://templatemo.com/tm-571-hexashop
                                             <div class="inner">
                                                 <h4>Kids</h4>
                                                 <p>Treat your kids to new shoes, slides & accessories.</p>
-                                                <div class="main-border-button">
-                                                    <a href="#">Discover More</a>
+                                                <div class="main-border-button scroll-to-section">
+                                                    <a href="#kids">Discover More</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -183,8 +183,8 @@ https://templatemo.com/tm-571-hexashop
                                             <div class="inner">
                                                 <h4>Accessories</h4>
                                                 <p>Versatile pieces from bags to socks to effortlessly complete your look</p>
-                                                <div class="main-border-button">
-                                                    <a href="#">Discover More</a>
+                                                <div class="main-border-button scroll-to-section">
+                                                    <a href="#accessories">Discover More</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -201,7 +201,7 @@ https://templatemo.com/tm-571-hexashop
     <!-- ***** Main Banner Area End ***** -->
 
     <!-- ***** Announcement Area Starts ***** -->
-    <section class="section" id="women">
+    <section class="section" id="">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
