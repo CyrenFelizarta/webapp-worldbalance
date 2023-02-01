@@ -27,12 +27,12 @@ class RedirectIfAuthenticated
                 $user = Auth::guard($guard);
 
                 // to admin dashboard
-                if($user->hasRole('admin')) {
+                if($user->hasUser('admin')) {
                     return redirect(route('admin_dashboard'));
                 }
 
                 // to user dashboard
-                else if($user->hasRole('employee')) {
+                else if($user->hasUser('employee')) {
                     return redirect(route('dashboard'));
                 }
             }
