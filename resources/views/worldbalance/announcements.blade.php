@@ -251,10 +251,10 @@ https://templatemo.com/tm-571-hexashop
                         
                             <br>Log here <a href="{{route('login')}}">to log in</a></p>
                             <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                <li><a href="https://www.facebook.com/worldbalance"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/worldbalanceph"><i class="fa fa-twitter"></i></a></li>
+                            {{-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li> --}}
                         </ul>
                     </div>
                 </div>
