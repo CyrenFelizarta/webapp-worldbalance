@@ -126,10 +126,10 @@ https://templatemo.com/tm-571-hexashop
                         </div>
                         <p>The World Balance story began with one pair of shoes and a visionary family of shoemakers in the 1980s. Now, the brand has grown into one of the leading retailers in the country. For more than 40 years, World Balance continue to make people, products, and lives better.</p>
                         <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                            <li><a href="https://www.facebook.com/worldbalance"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/worldbalanceph"><i class="fa fa-twitter"></i></a></li>
+                            {{-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li> --}}
                         </ul>
                     </div>
                 </div>

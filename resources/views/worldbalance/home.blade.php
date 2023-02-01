@@ -201,7 +201,7 @@ https://templatemo.com/tm-571-hexashop
     <!-- ***** Main Banner Area End ***** -->
 
     <!-- ***** Announcement Area Starts ***** -->
-    <section class="section" id="">
+    <section class="section" id="women">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
