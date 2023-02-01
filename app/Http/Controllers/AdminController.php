@@ -164,7 +164,36 @@ class AdminController extends Controller
         return redirect()->action([AdminController::class, 'AdminListUsers'])->with('status', 'Employee Account Deleted Successfully');
     }
 
-    public function AdminEditEmployee() {
-        return view ('admin.edit-employee');
+    public function AdminEditEmployee($id) {
+        $user = User::where('id', $id)->firstOrFail();
+
+        return view('admin.edit-employee', compact('user'));
     }
+
+
+
+    public function AdminUpdateEmployee(Request $request, User $user) {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255'.$user->id,
+            'password' => 'nullable|string|min:6|confirmed',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->back()
+                        ->withErrors($validator)
+                        ->withInput();
+        }
+
+        $user->name = $request->name;
+        $user->email = $request->email;
+        if($request->password) {
+            $user->password = bcrypt($request->password);
+        }
+        $user->save();
+
+        return redirect()->action([AdminController::class, 'AdminListUsers'])->with('status', 'Employee Account Updated Successfully');
+    }
+
+
 }

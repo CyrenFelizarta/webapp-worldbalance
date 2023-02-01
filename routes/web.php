@@ -1,6 +1,8 @@
 <?php
 
 use App\Models\Announcement;
+use App\Models\User;
+
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
@@ -96,9 +98,8 @@ Route::group(['middleware' => ['auth', 'admin'], 'prefix' => 'admin'], function 
     Route::get('/users', [AdminController::class, 'AdminListUsers'])->name('admin.list-user');
     Route::post('/store-user', [AdminController::class, 'AdminStoreUser'])->name('admin.store-user');                                                  //admin store employee credentials
     Route::get('/users/{user}/delete', [AdminController::class, 'AdminDeleteUser'])->name('admin.delete-user');                                                      //admin delete employee account
-    Route::get('/edit-employee', [AdminController::class, 'AdminEditEmployee'])->name('admin.edit-employee');                                    //admin edit employee page
-
-
+    Route::get('/{user:id}/edit-employee', [AdminController::class, 'AdminEditEmployee'])->name('admin.edit-employee');                                    //admin edit employee page
+    Route::post('{user}/update-user', [AdminController::class, 'AdminUpdateEmployee'])->name('admin.update-user');                                                  //admin store employee credentials
 
 
 });
