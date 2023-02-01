@@ -478,7 +478,7 @@ https://templatemo.com/tm-571-hexashop
                 <div class="col-lg-3">
                     <div class="first-item">
                         <div class="logo">
-                            <img src="{{asset('images/white-logo.png')}}" alt="hexashop ecommerce templatemo">
+                            <img src="{{asset('images/worlbalance_white_logo.png')}}" style="height: 80px" alt="world balance logo">
                         </div>
                         <ul>
                             <li><a href="#">Butuan City, Agusan Del Norte, Philippines</a></li>
