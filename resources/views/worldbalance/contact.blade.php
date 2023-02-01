@@ -226,18 +226,18 @@ https://templatemo.com/tm-571-hexashop
                 <div class="col-md-4">
                     <h4>Shopping &amp; Categories</h4>
                     <ul>
-                        <li><a href="#">Men’s Shopping</a></li>
-                        <li><a href="#">Women’s Shopping</a></li>
-                        <li><a href="#">Kid's Shopping</a></li>
+                        <li><a href="{{route('home.index')}}">Men’s Shopping</a></li>
+                        <li><a href="{{route('home.index')}}">Women’s Shopping</a></li>
+                        <li><a href="{{route('home.index')}}">Kid's Shopping</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><a href="#">Homepage</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="{{route('home.index')}}">Homepage</a></li>
+                        <li><a href="{{route('about.index')}}">About Us</a></li>
+                        <li><a href="{{route('product.index')}}">Products</a></li>
+                        <li><a href="{{route('contact.index')}}">Contact Us</a></li>
                     </ul>
                 </div>
                 {{-- <div class="col-lg-3">
