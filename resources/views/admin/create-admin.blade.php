@@ -2,7 +2,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-white leading-tight">
-            {{ __('Create Employee Account') }}
+            {{ __('Create Admin Account') }}
         </h2>
     </x-slot>
 
@@ -22,11 +22,6 @@
         <p style="color:green; margin-bottom:25px">{{session('status')}}</p>
     @endif
 
-    <a href="{{route('admin.create-admin')}}">
-        <button class="h-10 px-5 m-2 text-green-100 transition-colors duration-150 bg-green-500 rounded-lg focus:shadow-outline hover:bg-green-800 float-left">Create Admin</button>
-    </a>
-    
-
     <a href="{{route('admin.list-user')}}">
         <button class="inline-flex items-center px-4 py-2 bg-red-500 hover:bg-red-600 text-white text-sm font-medium rounded-md float-right">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -39,10 +34,8 @@
 
       <br>
       <br>
-      <br>
-      <br>
 
-      <form method="POST" action="{{ route('admin.store-user') }}">
+      <form method="POST" action="{{ route('admin.store-admin') }}">
         @csrf
 
         <!-- Name -->
@@ -86,7 +79,7 @@
             
 
             <x-primary-button class="h-10 px-5 m-2 text-green-100 transition-colors duration-150 bg-green-500 rounded-lg focus:shadow-outline hover:bg-green-800 float-right">
-                {{ __('Register Employee') }}
+                {{ __('Register Admin') }}
             </x-primary-button>
         </div>
     </form>

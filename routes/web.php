@@ -74,6 +74,12 @@ Route::get('/admin_dashboard', function () {
 
 require __DIR__.'/auth.php';
 
+Route::group(['middleware' => ['auth', 'admin']], function () {
+    Route::get('/register');
+
+});
+
+
 
 //--------------EMPLOYEE ROUTES---------------
 
@@ -100,6 +106,7 @@ Route::group(['middleware' => ['auth', 'admin'], 'prefix' => 'admin'], function 
     Route::get('/users/{user}/delete', [AdminController::class, 'AdminDeleteUser'])->name('admin.delete-user');                                                      //admin delete employee account
     Route::get('/{user:id}/edit-employee', [AdminController::class, 'AdminEditEmployee'])->name('admin.edit-employee');                                    //admin edit employee page
     Route::post('{user}/update-user', [AdminController::class, 'AdminUpdateEmployee'])->name('admin.update-user');                                                  //admin store employee credentials
-
+    Route::post('/store-admin', [AdminController::class, 'AdminStoreAdmin'])->name('admin.store-admin');                                                  //admin store employee credentials
+    Route::get('/create-admin', [AdminController::class, 'AdminCreateAdmin'])->name('admin.create-admin');                                    //admin create employee page
 
 });

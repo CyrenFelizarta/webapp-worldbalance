@@ -37,6 +37,10 @@ class AdminController extends Controller
         return view ('admin.create-employee');
     }
 
+    public function AdminCreateAdmin() {
+        return view ('admin.create-admin');
+    }
+
 
     public function AdminListUsers() {
         $users = User::all();
@@ -157,6 +161,34 @@ class AdminController extends Controller
     }
 
 
+    public function AdminStoreAdmin(Request $request) {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:6|confirmed',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->back()
+                        ->withErrors($validator)
+                        ->withInput();
+        }
+
+        $user = new User;
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->password = bcrypt($request->password);
+        $user->role = 'admin';
+        $user->save();
+
+
+
+        return redirect()->action([AdminController::class, 'AdminListUsers'])->with('status', 'Admin Account Created Successfully');
+        // return redirect()->back()->with('status', 'Employee Account Created Successfully');
+    }
+
+
+
     public function AdminDeleteUser($id) {
         $user = User::findOrFail($id);
         $user->delete();
@@ -192,7 +224,7 @@ class AdminController extends Controller
         }
         $user->save();
 
-        return redirect()->action([AdminController::class, 'AdminListUsers'])->with('status', 'Employee Account Updated Successfully');
+        return redirect()->action([AdminController::class, 'AdminListUsers'])->with('status', 'Account Updated Successfully');
     }
 
 
