@@ -163,4 +163,8 @@ class AdminController extends Controller
 
         return redirect()->action([AdminController::class, 'AdminListUsers'])->with('status', 'Employee Account Deleted Successfully');
     }
+
+    public function AdminEditEmployee() {
+        return view ('admin.edit-employee');
+    }
 }
