@@ -253,8 +253,8 @@ https://templatemo.com/tm-571-hexashop
                     <div class="under-footer">
                         <p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved. 
                         
-                        <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a></p>
-                        <ul>
+                            <br>Log here <a href="{{route('login')}}">to log in</a></p>
+                            <ul>
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
