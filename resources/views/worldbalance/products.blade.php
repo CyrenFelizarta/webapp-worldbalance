@@ -61,22 +61,24 @@ https://templatemo.com/tm-571-hexashop
                             <li class="scroll-to-section"><a href="{{route('home.index')}}">Men's</a></li>
                             <li class="scroll-to-section"><a href="{{route('home.index')}}">Women's</a></li>
                             <li class="scroll-to-section"><a href="{{route('home.index')}}">Kid's</a></li>
-                            <li class="submenu">
-                                <a href="javascript:;">Pages</a>
+                            {{-- <li class="submenu">
+                                <a href="javascript:;">Products</a>
                                 <ul>
                                     <li><a href="{{route('about.index')}}">About Us</a></li>
                                     <li><a href="{{route('product.index')}}">Products</a></li>
-                                    {{-- <li><a href="single-product.html">Single Product</a></li> --}}
+                                    <li><a href="single-product.html">Single Product</a></li>
                                     <li><a href="{{route('contact.index')}}">Contact Us</a></li>
                                 </ul>
-                            </li>
-                            <li class="submenu">
-                                <a href="javascript:;">What's New</a>
+                            </li> --}}
+                            <li class="scroll-to-section"><a href="{{route('product.index')}}">Products</a></li>
+                            {{-- <li class="submenu">
+                                <a href="javascript:;">Contact Us</a>
                                 <ul>
                                     <li><a href="{{route('announcement.index')}}">Announcements</a></li>
                                 </ul>
-                            </li>
-                            <li class="scroll-to-section"><a href="{{route('home.index')}}l">Explore</a></li>
+                            </li> --}}
+                            <li class="scroll-to-section"><a href="{{route('contact.index')}}">Contact Us</a></li>
+                            <li class="scroll-to-section"><a href="{{route('about.index')}}">About Us</a></li>
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
